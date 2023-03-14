@@ -2,3 +2,6 @@
 
 export(figscatter)
 export(potencia)
+import(dplyr)
+import(ggplot2)
+import(tidyr)

@@ -6,6 +6,9 @@
 #'
 #' @return scatter plot with a linear regression
 #' @export
+#' @import ggplot2
+#' @import dplyr
+#' @import tidyr
 #'
 #' @examples
 #' figscatter(iris, Petal.Length, Petal.Width)
