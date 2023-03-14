@@ -12,8 +12,8 @@
 #'
 #' @examples
 #' figscatter(iris, Petal.Length, Petal.Width)
-figscatter <- function(data, var1, var2){
-  data %>% ggplot(aes(x=var1, y=var2)) +
-    geom_point() + geom_smooth(method = "lm") +
+figscatter <- function(data){
+  data %>% ggplot(aes(x=Petal.Length, y=Petal.Width, color=Species)) +
+    geom_point() + geom_smooth(method = "lm", se=FALSE) +
     theme_classic()
 }
